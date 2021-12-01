@@ -1,0 +1,53 @@
+< > -> fixed parameter
+[ ] -> optional parameter 
+
+push 	<x>
+pop  	[x] -> where x is the amount of numbers to pop ;TODO Parameter einfügen
+swap	 	-> takes two numbers from the stack, swaps them, and then puts them back
+add  	[x]
+sub  	[x]
+mul  	[x]
+div  	[x]
+pow  	[x]
+mod  	[x]
+ceil 	
+floor	
+round	
+double
+store	[x] -> wobei  0<=x<4 (oder die Makros RA, RB,RC, RD) 
+load	[x] /\
+
+;Kommt noch
+peek -> Gibt den Wert des obersten Elements mit als formatierten String aus   -->  peek "Das Ergebnis ist {}"
+
+
+
+
+
+
+;Subtrahend tauschen
+
+push 2
+sub 3
+	= 2 - 3
+
+push 2
+push 3
+sub
+	= 3 - 2
+
+
+
+push 2
+push 3
+swap
+sub
+	= 2 - 3
+
+
+
+;Ein bisl Insiderwissen:
+;Die Register die man bei "load" und "store" angibt
+;sind selber Makros, welche einfach vom Präprozessor
+;eingesetzt werden.
+;So ist RA = 0, RB = 1, usw.

@@ -1,0 +1,35 @@
+;Programm zum ausrechnen von Kantenlaenge und Inhalt eines Vierecks
+
+;Kantenlaengen definieren
+#define a 2
+#define b 3
+
+;Inhalt berechnen
+push a
+push b
+mul
+
+;Ergebnis speichern
+store RA
+pop
+
+;Umfang berechnen
+push a
+mul 2
+
+push b
+mul 2
+
+add
+
+;Ergebnis speichern
+store RB
+pop
+
+
+;Werte laden
+load RA
+load RB
+
+;Nach Programmablauf werden alle Werte, die noch auf dem Stack liegen ausgelesen
+;Da es sich um einen Stack handelt, werden die Werte anders herum ausgegeben

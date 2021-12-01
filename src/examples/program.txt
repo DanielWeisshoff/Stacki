@@ -1,0 +1,59 @@
+;Stacki ist stackbased (heftig)
+
+;Die Sprache setzt sich aus Befehlen zusammen, 
+;die maximal einen Parameter beinhalten können
+
+push 3		;3 auf den Stack
+sub 2		;das oberste Element, in dem Fall die 3, wird mit 2 subtrahiert
+			;nun ist nurnoch eine Zahl, undzwar das Ergebnis auf dem Stack
+pop 		;Ergebnis löschen
+
+
+push 3
+push 2
+sub 		;nehme zwei Elemente von dem Stack, und subtrahiere das zweite von dem ersten
+			;in diesem Fall wäre das Ergebnis -1
+			;alle anderen arithmetischen Operationen können auf diese beiden Arten benutzt werden
+
+store RA 	;store nimmt einen Wert vom Stack und 
+		 	;speichert ihn in einem der vier Register RA, RB, RC, RD
+
+
+
+			;noch ein paar Beispiele: 
+
+
+			;Präprozessor gibt's gratis dazu :)
+#define pi 3.14
+
+load RA
+div pi
+pow 2
+ceil
+
+pop
+
+
+push 20
+push 10
+swap
+div
+mod 2
+
+pop
+
+
+push 10
+push 20
+!  		 	;Mit einem '!' wird das Programm gestoppt
+		 	;Kleiner Insider, der Preprocessor hängt immer ein Ausrufezeichen ans Ende der Datei
+
+
+
+
+push 10
+double		;durch "double" wird das oberste Element erneut auf den Stack getan
+store RA 	;perfekt, wenn man einen Wert speichern und weiterbenutzen möchte
+		 
+pow 2
+store RB

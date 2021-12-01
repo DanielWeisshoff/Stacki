@@ -1,0 +1,34 @@
+#define pi 3.14
+#define r 1
+
+;Inhalt
+push pi
+push r
+pow 2
+mul
+
+store RA ;Inhalt -> RA
+pop
+
+;Umfang
+push 2
+mul pi
+mul r
+
+store RB;Umfang -> Rb
+pop
+
+;Durchmesser xD
+push r
+push r
+add
+
+store RC
+pop
+
+
+
+;Ausgabe
+load RA
+load RB
+load RC
