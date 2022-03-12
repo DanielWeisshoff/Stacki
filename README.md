@@ -8,5 +8,5 @@ kommen aber noch.
 
 
 Für Beispiele und eine Erklärung, wie das Ding zu benutzen ist,
-gibt es den Ordner src/examples, indem sich Beispielprogramme befinden.
+gibt es den Ordner src/examples, in dem sich Beispielprogramme befinden.
 Um den Interpreter zu starten, einfach die run.bat ausführen und das Programm wählen.
